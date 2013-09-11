@@ -4,9 +4,16 @@ require 'rspec'
 require_relative '../pizza'
 
 describe Pizza::Pie do
+  describe '.initialize' do
+    it "sets the name of the topping" do
+      topping = Pizza::Topping.new('olives')
 
+      expect(topping.name).to equ('olives')
+    end
+  end
 end 
 
 describe Pizza::Topping do
+
 
 end
